@@ -5,7 +5,7 @@ var gulp  = require('gulp'),
     clean = require('gulp-clean'),
     run   = require('gulp-run'),
 
-    themesConfig = require('./dev/tools/gulp/themes');
+    themesConfig = require('./dev/tools/gulp/configs/themes');
 
 var options = ((process.argv.slice(2))[1]).substring(2);
 
@@ -59,7 +59,7 @@ gulp.task('css', function() {
 gulp.task('build', function() {
 
     var theme = themesConfig[options];
-    var cmd = 'bin/magento dev:source-theme:deploy --theme ' + theme.vendor + '/'+ theme.name + ' --locale ' + theme.locale;
+    var cmd = 'bin/magento dev:source-theme:deploy --theme="' + theme.vendor + '/'+ theme.name + '" --locale="' + theme.locale + '"';
     var folderToClean = [
         './pub/static/' + theme.area + '/' + theme.name + '/*',
         './var/view_preprocessed/*',

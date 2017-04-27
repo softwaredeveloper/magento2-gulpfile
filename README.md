@@ -22,7 +22,7 @@ Usage
         npm install gulp-clean
         npm install gulp-run
 
-3. Create a configuration file **dev/tools/gulp/themes.js** with the following contents.
+3. Create a configuration file **dev/tools/gulp/configs/themes.js** with the following contents.
 
         module.exports = {
         <Theme>: {
@@ -43,19 +43,12 @@ Usage
          }
         };
         
-
-
-src:  Array of theme and modules you want to compile in format "vendor/<Vendor>/<Module-name>"
-
-dest: Path in pub/static of your theme
-
-area: area, one of (frontend|adminhtml|doc),
-
-name: theme name in format theme-name,
-
-locale: locale,
-
-files: Files to compile
+* src:  Array of theme and modules you want to compile in format "vendor/<Vendor>/<Module-name>"
+* dest: Path in pub/static of your theme
+* area: Area, one of (frontend|adminhtml|doc),
+* name: Theme name in format theme-name,
+* locale: Locale (ie. en_US),
+* files: Array of files to compile
 
 
 Commands
@@ -63,11 +56,11 @@ Commands
  
 1. Task watch.       
         
-        gulp watch --Theme-name
+        gulp watch --<theme-name>
         
 1. Task clean and build.       
         
-        gulp build --Theme-name
+        gulp build --<theme-name>
 
 
 Nice to have
