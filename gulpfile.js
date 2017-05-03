@@ -22,7 +22,7 @@ gulp.task('watch',
 
 
 /**
- * Less Cmpile Task.
+ * Less Compile Task.
  */
 
 gulp.task('css', function() {

@@ -65,7 +65,7 @@ Commands
 
 Nice to have
 ------------
-- Update Magento2 **packege.json** with the required modules
+- Update Magento2 **package.json** with the required modules
 - Compile different languages
 
 Licence
