@@ -1,5 +1,5 @@
 # BITBULL MAGENTO2 GULPFILE #
-
+# [Freelance Magento Developer](https://www.phpfreelanceprogrammer.com/magento-programmer.html)
 Simple Gulpfile for Magento2
 
 Why?
